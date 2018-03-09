@@ -1,0 +1,40 @@
+/*
+* @Author: zhang
+* @Date:   2018-03-08 18:56:06
+* @Last Modified by:   zhang
+* @Last Modified time: 2018-03-09 00:38:31
+*/
+@import url("base.css");
+.tt2{
+	width: 100%;
+	height: 58px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 10px;
+}
+.tt2 span{
+	font-size: 14px;
+	color: #999999;
+	line-height: 58px;
+	padding: 20px;
+}
+.tt2 span:hover{
+	color: #5079D9;
+}
+.neirong{
+	width: 100%;
+	height: auto;
+	background: #EDEDED;
+	margin-bottom: 10px;
+}
+.neirong_cen{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 30px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #EFEFEF;
+}
+.neirong_cen img{
+	width: 100%;
+}

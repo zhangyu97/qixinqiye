@@ -1,0 +1,140 @@
+/*
+* @Author: zhang
+* @Date:   2018-03-09 00:40:15
+* @Last Modified by:   zhang
+* @Last Modified time: 2018-03-09 14:27:21
+*/
+@import url("base.css");
+.shang{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.ss_ce{
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	background: red;
+	border: 2px solid #EFEFEF;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+.ss_ce li{
+	height: 429px;
+	/* float: left; */
+	box-sizing: border-box;
+	border-right: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	background: #fff;
+	
+}
+.ss_ce li .one-img img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s;
+}
+.ss_ce li .two-word{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.ss_ce li .two-word h2{
+	font-size: 16px;
+	color: #424242;
+	margin: 0;
+}
+.ss_ce li .two-word p{
+	overflow: hidden;
+	padding-top: 7px;
+	font-size: 12px;
+	line-height: 1.2;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #b2b2b2;
+}
+.ss_ce li .cha{
+	width: 100px;
+	height: 30px;
+	border: 1px solid #DBDBDB;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #424242;
+	display: none; 
+}
+.ss_ce li .cha:hover{
+	background: #F2F2F2;
+}
+.ss_ce li:hover img{
+	transform: scale(1.1);
+	transition: all 0.6s cubic-bezier(0.17, 0.84, 0.44, 1) 0s;
+}
+.ss_ce li:hover .cha{
+	display: block;
+}
+.ye{
+	width: 100%;
+	height: 41px;
+	margin: 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.ye_ce{
+	width: 200px;
+	height: 41px;
+	margin: 0 auto;
+}	
+.ye .ye_box{
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #DCDCDC;
+	background: #FBFBFB;
+	font-size: 14px;
+	color: #76838F;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 8px;
+	float: left;
+	margin-left: 20px;
+}
+.ye .ye_box:nth-child(1){
+	background: #4C6CB6;
+	color: #FFF;
+}
+.ye .ye_box:hover{
+	background: #4C6CB6;
+	color: #FFF;
+}
+@media screen and (min-width: 1200px){
+	.ss_ce li{
+		width: calc(100% / 4);
+	}
+}	
+@media screen and (max-width: 1200px) and (min-width: 992px){
+	.ss_ce li{
+		width: calc(100% / 4);
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.ss_ce li{
+		width: calc(100% / 2);
+	}
+	.ss_ce li .one-img{
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.ss_ce li{
+		width: calc(100% / 2);
+		height: 268px;
+	}
+	.ss_ce li .one-img{
+		margin-top: 30px;
+	}
+}
